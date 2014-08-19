@@ -21,4 +21,9 @@ function parse(tpl) {
     return out;
 }
 
-document.write(parse('{{layout}}'));
+if (!inited)
+    document.write(parse('{{layout}}'));
+else
+    document.write(parse('{{page/404}}'));
+
+var inited = true;

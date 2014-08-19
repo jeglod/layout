@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PhotoBox</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mq.css">
+</head>
+<body>
+    <header class="main-header clear-group">
+        <div class="l-wrap">
+            <figure><a href="/"><img src="/img/logo.png" height="95" alt="logo"></a></figure>
+            <p class="main-header__text">Welcome to website</p>
+        </div>
+    </header>
+    <div class="l-wrap">
+        <section id="content" class="content clear-group">
+            {{content}}
+        </section>
+    </div>
+    <footer class="main-footer">
+        <div class="l-wrap">
+            <h3>Have a question?</h3>
+            <figure class="phone-container"><img src="/img/phone.png" alt="phone"></figure>
+            <p class="footer__contacts-phone">Call <a href="tel:+79110969036"><span>8 (955) 066 90 36</span></a></p>
+        </div>
+    </footer>
+
+    {{block/js}}
+
+</body>
+</html>
